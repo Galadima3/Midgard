@@ -11,14 +11,16 @@ class GestureX extends StatefulWidget {
 
 class _GestureXState extends State<GestureX> {
   int numberOfTimesTapped = 0;
-  void _increment (){
+  void _increment() {
     setState(() {
       numberOfTimesTapped++;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
