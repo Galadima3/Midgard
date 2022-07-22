@@ -4,6 +4,8 @@ import 'package:midgard/appbar.dart';
 import 'package:midgard/bottom_nav_bar.dart';
 import 'package:midgard/drawer.dart';
 import 'package:midgard/gesturedetector.dart';
+import 'package:midgard/sliver_app_bar.dart';
+import 'package:midgard/tab_bar.dart';
 // import 'package:midgard/Images.dart';
 // import 'package:midgard/cliprrect.dart';
 // import 'package:midgard/expanded.dart';
@@ -22,9 +24,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
       
       debugShowCheckedModeBanner: false,
-      home: DrawerX(),
+      home: TabBarx(),
     );
   }
 }
